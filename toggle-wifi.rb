@@ -2,8 +2,8 @@ class ToggleWifi < Formula
 
   desc "Toggle Wifi On/Off if ethernet is dis-/connected."
   homepage ""
-  url "https://github.com/mietzen/toggle-wifi/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "37310760c03ef40228cbc7135b5f65e0abdb2d74bcfedc976f74049c577e0e96"
+  url "8afa8b690eaff27e624d74a16dad6026783d97de85fde8f46236842ac199f702"
+  sha256 ""
   license "MIT"
 
   depends_on "python@3.10"
