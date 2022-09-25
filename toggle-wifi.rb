@@ -9,14 +9,14 @@ class ToggleWifi < Formula
   depends_on "python@3.10"
   
   def install
-    inreplace "com.my.toggle-wifi.plist", "$TOGGLE-WIFI-PATH$", "#{HOMEBREW_PREFIX}/bin/toggle-wifi"
+    inreplace "homebrew.mxcl.toggle-wifi.plist", "$TOGGLE-WIFI-PATH$", "#{HOMEBREW_PREFIX}/bin/toggle-wifi"
     bin.install "toggle-wifi" 
     prefix.install "toggle-wifi.py"
     prefix.install Dir["notifier"]    
     prefix.install "README.md"
     prefix.install "LICENSE"
-    prefix.install "com.my.toggle-wifi.plist"
-    prefix.install_symlink "com.my.toggle-wifi.plist" => "#{plist_name}.plist"
+    prefix.install "homebrew.mxcl.toggle-wifi.plist"
+    prefix.install_symlink "homebrew.mxcl.toggle-wifi.plist" => "#{plist_name}.plist"
   end
 
   test do
